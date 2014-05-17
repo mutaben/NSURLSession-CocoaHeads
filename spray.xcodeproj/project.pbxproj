@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		900A6CA51921346300592C06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900A6CA41921346300592C06 /* Foundation.framework */; };
+		900A6CA71921346300592C06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900A6CA61921346300592C06 /* CoreGraphics.framework */; };
+		900A6CA91921346300592C06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900A6CA81921346300592C06 /* UIKit.framework */; };
+		900A6CAF1921346300592C06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 900A6CAD1921346300592C06 /* InfoPlist.strings */; };
+		900A6CB11921346300592C06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6CB01921346300592C06 /* main.m */; };
+		900A6CB51921346300592C06 /* SPRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6CB41921346300592C06 /* SPRAppDelegate.m */; };
+		900A6CB71921346300592C06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900A6CB61921346300592C06 /* Images.xcassets */; };
+		900A6CBE1921346300592C06 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900A6CBD1921346300592C06 /* XCTest.framework */; };
+		900A6CBF1921346300592C06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900A6CA41921346300592C06 /* Foundation.framework */; };
+		900A6CC01921346300592C06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900A6CA81921346300592C06 /* UIKit.framework */; };
+		900A6CC81921346300592C06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 900A6CC61921346300592C06 /* InfoPlist.strings */; };
+		900A6CCA1921346300592C06 /* sprayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6CC91921346300592C06 /* sprayTests.m */; };
+		900A6CDB1921354100592C06 /* SPRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6CD91921354100592C06 /* SPRHomeViewController.m */; };
+		900A6CDC1921354100592C06 /* SPRHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900A6CDA1921354100592C06 /* SPRHomeViewController.xib */; };
+		900A6CDF19213A3400592C06 /* SPRNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6CDE19213A3400592C06 /* SPRNetworkManager.m */; };
+		900A6CE61921464F00592C06 /* UIImageView+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 900A6CE51921464F00592C06 /* UIImageView+Network.m */; };
+		90F8963B1922D351004DA44A /* SPRUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F896391922D351004DA44A /* SPRUploadViewController.m */; };
+		90F8963C1922D351004DA44A /* SPRUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F8963A1922D351004DA44A /* SPRUploadViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		900A6CC11921346300592C06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 900A6C991921346300592C06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 900A6CA01921346300592C06;
+			remoteInfo = spray;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		900A6CA11921346300592C06 /* spray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spray.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		900A6CA41921346300592C06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		900A6CA61921346300592C06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		900A6CA81921346300592C06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		900A6CAC1921346300592C06 /* spray-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "spray-Info.plist"; sourceTree = "<group>"; };
+		900A6CAE1921346300592C06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		900A6CB01921346300592C06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		900A6CB21921346300592C06 /* spray-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spray-Prefix.pch"; sourceTree = "<group>"; };
+		900A6CB31921346300592C06 /* SPRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRAppDelegate.h; sourceTree = "<group>"; };
+		900A6CB41921346300592C06 /* SPRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRAppDelegate.m; sourceTree = "<group>"; };
+		900A6CB61921346300592C06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		900A6CBC1921346300592C06 /* sprayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sprayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		900A6CBD1921346300592C06 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		900A6CC51921346300592C06 /* sprayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sprayTests-Info.plist"; sourceTree = "<group>"; };
+		900A6CC71921346300592C06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		900A6CC91921346300592C06 /* sprayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sprayTests.m; sourceTree = "<group>"; };
+		900A6CD81921354100592C06 /* SPRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRHomeViewController.h; sourceTree = "<group>"; };
+		900A6CD91921354100592C06 /* SPRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRHomeViewController.m; sourceTree = "<group>"; };
+		900A6CDA1921354100592C06 /* SPRHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPRHomeViewController.xib; sourceTree = "<group>"; };
+		900A6CDD19213A3400592C06 /* SPRNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRNetworkManager.h; sourceTree = "<group>"; };
+		900A6CDE19213A3400592C06 /* SPRNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRNetworkManager.m; sourceTree = "<group>"; };
+		900A6CE41921464F00592C06 /* UIImageView+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Network.h"; sourceTree = "<group>"; };
+		900A6CE51921464F00592C06 /* UIImageView+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Network.m"; sourceTree = "<group>"; };
+		90F896381922D350004DA44A /* SPRUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRUploadViewController.h; sourceTree = "<group>"; };
+		90F896391922D351004DA44A /* SPRUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRUploadViewController.m; sourceTree = "<group>"; };
+		90F8963A1922D351004DA44A /* SPRUploadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPRUploadViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		900A6C9E1921346300592C06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900A6CA71921346300592C06 /* CoreGraphics.framework in Frameworks */,
+				900A6CA91921346300592C06 /* UIKit.framework in Frameworks */,
+				900A6CA51921346300592C06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900A6CB91921346300592C06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900A6CBE1921346300592C06 /* XCTest.framework in Frameworks */,
+				900A6CC01921346300592C06 /* UIKit.framework in Frameworks */,
+				900A6CBF1921346300592C06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		900A6C981921346300592C06 = {
+			isa = PBXGroup;
+			children = (
+				900A6CAA1921346300592C06 /* spray */,
+				900A6CC31921346300592C06 /* sprayTests */,
+				900A6CA31921346300592C06 /* Frameworks */,
+				900A6CA21921346300592C06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		900A6CA21921346300592C06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CA11921346300592C06 /* spray.app */,
+				900A6CBC1921346300592C06 /* sprayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		900A6CA31921346300592C06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CA41921346300592C06 /* Foundation.framework */,
+				900A6CA61921346300592C06 /* CoreGraphics.framework */,
+				900A6CA81921346300592C06 /* UIKit.framework */,
+				900A6CBD1921346300592C06 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		900A6CAA1921346300592C06 /* spray */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CE0192145E800592C06 /* Categories */,
+				900A6CD31921350700592C06 /* Classes */,
+				900A6CB61921346300592C06 /* Images.xcassets */,
+				900A6CAB1921346300592C06 /* Supporting Files */,
+			);
+			path = spray;
+			sourceTree = "<group>";
+		};
+		900A6CAB1921346300592C06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CAC1921346300592C06 /* spray-Info.plist */,
+				900A6CAD1921346300592C06 /* InfoPlist.strings */,
+				900A6CB01921346300592C06 /* main.m */,
+				900A6CB21921346300592C06 /* spray-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		900A6CC31921346300592C06 /* sprayTests */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CC91921346300592C06 /* sprayTests.m */,
+				900A6CC41921346300592C06 /* Supporting Files */,
+			);
+			path = sprayTests;
+			sourceTree = "<group>";
+		};
+		900A6CC41921346300592C06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CC51921346300592C06 /* sprayTests-Info.plist */,
+				900A6CC61921346300592C06 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		900A6CD31921350700592C06 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CD41921350700592C06 /* Application */,
+				900A6CD51921350700592C06 /* Model */,
+				900A6CD61921350700592C06 /* Network */,
+				900A6CD71921350700592C06 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		900A6CD41921350700592C06 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CB31921346300592C06 /* SPRAppDelegate.h */,
+				900A6CB41921346300592C06 /* SPRAppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		900A6CD51921350700592C06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		900A6CD61921350700592C06 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CDD19213A3400592C06 /* SPRNetworkManager.h */,
+				900A6CDE19213A3400592C06 /* SPRNetworkManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		900A6CD71921350700592C06 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CD81921354100592C06 /* SPRHomeViewController.h */,
+				900A6CD91921354100592C06 /* SPRHomeViewController.m */,
+				900A6CDA1921354100592C06 /* SPRHomeViewController.xib */,
+				90F896381922D350004DA44A /* SPRUploadViewController.h */,
+				90F896391922D351004DA44A /* SPRUploadViewController.m */,
+				90F8963A1922D351004DA44A /* SPRUploadViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		900A6CE0192145E800592C06 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				900A6CE41921464F00592C06 /* UIImageView+Network.h */,
+				900A6CE51921464F00592C06 /* UIImageView+Network.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		900A6CA01921346300592C06 /* spray */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900A6CCD1921346300592C06 /* Build configuration list for PBXNativeTarget "spray" */;
+			buildPhases = (
+				900A6C9D1921346300592C06 /* Sources */,
+				900A6C9E1921346300592C06 /* Frameworks */,
+				900A6C9F1921346300592C06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = spray;
+			productName = spray;
+			productReference = 900A6CA11921346300592C06 /* spray.app */;
+			productType = "com.apple.product-type.application";
+		};
+		900A6CBB1921346300592C06 /* sprayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900A6CD01921346300592C06 /* Build configuration list for PBXNativeTarget "sprayTests" */;
+			buildPhases = (
+				900A6CB81921346300592C06 /* Sources */,
+				900A6CB91921346300592C06 /* Frameworks */,
+				900A6CBA1921346300592C06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				900A6CC21921346300592C06 /* PBXTargetDependency */,
+			);
+			name = sprayTests;
+			productName = sprayTests;
+			productReference = 900A6CBC1921346300592C06 /* sprayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		900A6C991921346300592C06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SPR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Octiplex;
+				TargetAttributes = {
+					900A6CBB1921346300592C06 = {
+						TestTargetID = 900A6CA01921346300592C06;
+					};
+				};
+			};
+			buildConfigurationList = 900A6C9C1921346300592C06 /* Build configuration list for PBXProject "spray" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 900A6C981921346300592C06;
+			productRefGroup = 900A6CA21921346300592C06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				900A6CA01921346300592C06 /* spray */,
+				900A6CBB1921346300592C06 /* sprayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		900A6C9F1921346300592C06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900A6CDC1921354100592C06 /* SPRHomeViewController.xib in Resources */,
+				90F8963C1922D351004DA44A /* SPRUploadViewController.xib in Resources */,
+				900A6CAF1921346300592C06 /* InfoPlist.strings in Resources */,
+				900A6CB71921346300592C06 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900A6CBA1921346300592C06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900A6CC81921346300592C06 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		900A6C9D1921346300592C06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900A6CDF19213A3400592C06 /* SPRNetworkManager.m in Sources */,
+				900A6CE61921464F00592C06 /* UIImageView+Network.m in Sources */,
+				900A6CB51921346300592C06 /* SPRAppDelegate.m in Sources */,
+				900A6CB11921346300592C06 /* main.m in Sources */,
+				900A6CDB1921354100592C06 /* SPRHomeViewController.m in Sources */,
+				90F8963B1922D351004DA44A /* SPRUploadViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900A6CB81921346300592C06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900A6CCA1921346300592C06 /* sprayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		900A6CC21921346300592C06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 900A6CA01921346300592C06 /* spray */;
+			targetProxy = 900A6CC11921346300592C06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		900A6CAD1921346300592C06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				900A6CAE1921346300592C06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		900A6CC61921346300592C06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				900A6CC71921346300592C06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		900A6CCB1921346300592C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		900A6CCC1921346300592C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		900A6CCE1921346300592C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spray/spray-Prefix.pch";
+				INFOPLIST_FILE = "spray/spray-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		900A6CCF1921346300592C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spray/spray-Prefix.pch";
+				INFOPLIST_FILE = "spray/spray-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		900A6CD11921346300592C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/spray.app/spray";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spray/spray-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "sprayTests/sprayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		900A6CD21921346300592C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/spray.app/spray";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "spray/spray-Prefix.pch";
+				INFOPLIST_FILE = "sprayTests/sprayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		900A6C9C1921346300592C06 /* Build configuration list for PBXProject "spray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900A6CCB1921346300592C06 /* Debug */,
+				900A6CCC1921346300592C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900A6CCD1921346300592C06 /* Build configuration list for PBXNativeTarget "spray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900A6CCE1921346300592C06 /* Debug */,
+				900A6CCF1921346300592C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900A6CD01921346300592C06 /* Build configuration list for PBXNativeTarget "sprayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900A6CD11921346300592C06 /* Debug */,
+				900A6CD21921346300592C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 900A6C991921346300592C06 /* Project object */;
+}
